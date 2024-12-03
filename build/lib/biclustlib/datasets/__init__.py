@@ -17,3 +17,8 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
+
+from .load import load_yeast_tavazoie
+from .load import load_prelic
+from .load import load_yeast_benchmark
+from .load import load_cancer_benchmark

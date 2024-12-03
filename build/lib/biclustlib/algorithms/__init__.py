@@ -17,3 +17,11 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
+
+from .bcca import BiCorrelationClusteringAlgorithm
+from .bibit import BitPatternBiclusteringAlgorithm
+from .cca import ChengChurchAlgorithm
+from .cca import ModifiedChengChurchAlgorithm
+from .las import LargeAverageSubmatrices
+from .plaid import Plaid
+from .xmotifs import ConservedGeneExpressionMotifs

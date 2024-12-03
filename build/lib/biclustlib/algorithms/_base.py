@@ -17,3 +17,18 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
+
+from abc import ABCMeta, abstractmethod
+
+class BaseBiclusteringAlgorithm(object, metaclass=ABCMeta):
+    """A class that defines the skeleton of a biclustering algorithm implementation."""
+
+    @abstractmethod
+    def run(self, data):
+        """Method needed to run a biclustering algorithm."""
+        pass
+
+    @abstractmethod
+    def _validate_parameters(self):
+        """Method to validate the input parameters of a biclustering algorithm, if necessary."""
+        pass

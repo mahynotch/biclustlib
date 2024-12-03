@@ -17,3 +17,13 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
+
+from .subspace import clustering_error
+from .subspace import relative_non_intersecting_area
+
+from .prelic import prelic_relevance
+from .prelic import prelic_recovery
+
+from .liu_wang import liu_wang_match_score
+
+from .csi import csi
