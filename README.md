@@ -4,6 +4,8 @@ biclustlib is a Python library of biclustering algorithms, evaluation measures a
 
 This library is under constant update. We expect to review its code and release a first version soon.
 
+This fork add support to newer version of python and numpy, replacing gmpy with gmpy2. Although all attempts to compile Fabia are failed, recommendations are welcomed are appreciated. 
+
 ## Installation
 
 First you need to ensure that all packages have been installed.

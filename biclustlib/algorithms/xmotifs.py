@@ -71,7 +71,7 @@ class ConservedGeneExpressionMotifs(BaseBiclusteringAlgorithm):
         self._validate_parameters()
 
         num_remaining_rows, num_cols = data.shape
-        remaining_rows = np.ones(num_remaining_rows, np.bool)
+        remaining_rows = np.ones(num_remaining_rows, bool)
         biclusters = []
 
         for i in range(self.num_biclusters):

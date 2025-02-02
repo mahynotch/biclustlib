@@ -21,7 +21,7 @@
 from ._base import BaseBiclusteringAlgorithm
 from ..models import Bicluster, Biclustering
 from itertools import combinations
-from gmpy import popcount
+from gmpy2 import popcount
 from sklearn.utils.validation import check_array
 
 import numpy as np
@@ -56,7 +56,7 @@ class BitPatternBiclusteringAlgorithm(BaseBiclusteringAlgorithm):
         ----------
         data : numpy.ndarray
         """
-        data = check_array(data, dtype=np.bool, copy=True)
+        data = check_array(data, dtype=bool, copy=True)
         self._validate_parameters()
 
         data = [np.packbits(row) for row in data]
