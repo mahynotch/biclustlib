@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "biclustlib"
+version = "0.1"
+description = "Library of biclustering algorithms, evaluation measures and dataset"
+license = {text = "GPL-3.0"}
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+urls = {Homepage = "https://github.com/padilha/biclustlib"}
+
+[tool.setuptools]
+packages = {find = {}}
+include-package-data = true
+
+[tool.setuptools.package-data]
+"biclustlib.datasets" = ["data/*/*"]

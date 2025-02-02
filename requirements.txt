@@ -5,5 +5,5 @@ pandas>=0.24.0
 bottleneck
 munkres
 gmpy2
-fabia
+# fabia
 rpy2>=2.9.5
