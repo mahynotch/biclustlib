@@ -46,7 +46,7 @@ class RBinaryInclusionMaximalBiclusteringAlgorithm(RBiclustWrapper):
     """
 
     def __init__(self, num_biclusters=10, min_rows=2, min_cols=2):
-        super().__init__(data_type=np.bool)
+        super().__init__(data_type=bool)
         self.min_rows = min_rows
         self.min_cols = min_cols
         self.num_biclusters = num_biclusters

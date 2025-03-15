@@ -81,7 +81,7 @@ class Plaid(BaseBiclusteringAlgorithm):
         ----------
         data : numpy.ndarray
         """
-        residuals = check_array(data, dtype=np.double, copy=True)
+        residuals = check_array(data, dtype=np.float64, copy=True)
         self._validate_parameters()
 
         num_rows, num_cols = residuals.shape

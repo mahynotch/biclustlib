@@ -78,7 +78,7 @@ class QualitativeBiclustering(ExecutableWrapper):
     def _write_data(self, data_path, data):
         header = 'p\t' + '\t'.join(str(i) for i in range(data.shape[1]))
         row_names = np.char.array([str(i) for i in range(data.shape[0])])
-        data = data.astype(np.str)
+        data = data.astype(str)
         data = np.hstack((row_names[:, np.newaxis], data))
 
         with open(data_path, 'wb') as f:

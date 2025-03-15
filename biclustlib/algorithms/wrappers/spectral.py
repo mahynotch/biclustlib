@@ -19,7 +19,7 @@
 """
 
 from ._base import SklearnWrapper
-from sklearn.cluster.bicluster import SpectralBiclustering
+from sklearn.cluster import SpectralBiclustering
 
 class Spectral(SklearnWrapper):
     """Spectral Biclustering.

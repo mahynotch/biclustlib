@@ -170,8 +170,8 @@ class RBiclustWrapper(BaseBiclusteringAlgorithm, metaclass=ABCMeta):
         number = int(biclust_result.do_slot('Number')[0])
 
         if number:
-            rows_bool = np.array(biclust_result.do_slot('RowxNumber'), np.bool).T
-            cols_bool = np.array(biclust_result.do_slot('NumberxCol'), np.bool)
+            rows_bool = np.array(biclust_result.do_slot('RowxNumber'), bool).T
+            cols_bool = np.array(biclust_result.do_slot('NumberxCol'), bool)
 
             if cols_bool.shape[0] == data.shape[1]:
                 cols_bool = cols_bool.T
